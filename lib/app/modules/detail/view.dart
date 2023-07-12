@@ -126,10 +126,10 @@ class DetailPage extends StatelessWidget {
                               homeCtrl.addTodo(homeCtrl.editCtrl.text);
                           if (success) {
                             EasyLoading.showSuccess(
-                                'Kendine yeni is kitledin. H.O.');
+                                'Kendine yeni iş kitledin. H.O.');
                           } else {
                             EasyLoading.showError(
-                                'O baslikta todo var zaten MAL.');
+                                'O başlıkta todo var zaten MAL.');
                           }
                           homeCtrl.editCtrl.clear();
                         }
@@ -139,7 +139,7 @@ class DetailPage extends StatelessWidget {
                   ),
                   validator: (value) {
                     if (value == null || value.trim().isEmpty) {
-                      return 'Bi bok yazmadin ki, ne basion tusa';
+                      return 'Bi bok yazmadın ki, ne basıyon tuşa';
                     }
                     return null;
                   },

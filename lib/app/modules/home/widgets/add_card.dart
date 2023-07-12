@@ -42,7 +42,7 @@ class AddCard extends StatelessWidget {
                       ),
                       validator: (value) {
                         if (value == null || value.trim().isEmpty) {
-                          return 'Task basligi gir lan MAL';
+                          return 'Başlık gir lan SİKİK';
                         }
                         return null;
                       },
@@ -94,9 +94,10 @@ class AddCard extends StatelessWidget {
 
                         Get.back();
                         homeCtrl.addTask(task)
-                            ? EasyLoading.showSuccess('Pasam yorulmadin insallah ?')
+                            ? EasyLoading.showSuccess(
+                                'Paşam yorulmadın inşallah ?')
                             : EasyLoading.showError(
-                                'Bi kere soyleyince anliyom ben...');
+                                'Bi kere söyleyince anlıyom ben...');
                       }
                     },
                     child: const Text('Confirm'),

@@ -39,7 +39,7 @@ class AddDialog extends StatelessWidget {
                         if (homeCtrl.formKey.currentState!.validate()) {
                           if (homeCtrl.task.value == null) {
                             EasyLoading.showError(
-                                'Task tipi sec lan tipini siktigim...');
+                                'Task tipi seç lan tipini siktiğim...');
                           } else {
                             var success = homeCtrl.updateTask(
                               homeCtrl.task.value!,
@@ -51,7 +51,7 @@ class AddDialog extends StatelessWidget {
                               homeCtrl.changeTask(null);
                             } else {
                               EasyLoading.showError(
-                                  'Kac kere daha eklicen ayni boku SIVRI ZEKA');
+                                  'Kaç kere daha eklicen aynı boku SİVRİ ZEKA');
                             }
                             homeCtrl.editCtrl.clear();
                           }

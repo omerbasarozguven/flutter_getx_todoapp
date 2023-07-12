@@ -78,7 +78,7 @@ class HomePage extends GetView<HomeController> {
                   Get.to(() => AddDialog(), transition: Transition.downToUp);
                 } else {
                   EasyLoading.showInfo(
-                      'Once bi task type mi yaratsan acaba, nasi fikir ?');
+                      'Task Type yok aq, götüme mi sokacam Task`ı ?');
                 }
               },
               child: Icon(controller.deleting.value ? Icons.delete : Icons.add),
@@ -87,7 +87,7 @@ class HomePage extends GetView<HomeController> {
         },
         onAccept: (Task task) {
           controller.deleteTask(task);
-          EasyLoading.showSuccess('Usengec pezevenk');
+          EasyLoading.showSuccess('Afferim, Task Type sildin amk üşengeci');
         },
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
