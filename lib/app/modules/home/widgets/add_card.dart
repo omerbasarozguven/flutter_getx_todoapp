@@ -94,7 +94,7 @@ class AddCard extends StatelessWidget {
 
                         Get.back();
                         homeCtrl.addTask(task)
-                            ? EasyLoading.showSuccess('Kesin yaparsin o task i')
+                            ? EasyLoading.showSuccess('Pasam yorulmadin insallah ?')
                             : EasyLoading.showError(
                                 'Bi kere soyleyince anliyom ben...');
                       }
